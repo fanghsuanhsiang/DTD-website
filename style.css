@@ -1,0 +1,180 @@
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+  .navbar-effect{
+    box-shadow: 0 0 10px black;
+  }
+  .navbar-brand {
+   padding-top: 0px;
+   padding-bottom: 0px;
+  }/*--loge的設定--*/
+  .navbar-toggle span{
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+  }
+
+  .navbar-toggle span:nth-child(1) {
+    transform-origin: left center;
+  }
+
+  .navbar-toggle span:nth-child(2) {
+    transform-origin: left center;
+  }
+
+  .navbar-toggle span:nth-child(3) {
+    transform-origin: left center;
+  }
+
+  .navbar-toggle.open span:nth-child(1) {
+    transform: translate(3px, -2px) rotate(45deg);
+  }
+
+  .navbar-toggle.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+  }
+
+  .navbar-toggle.open span:nth-child(3) {
+    transform: translate(3px, 2px) rotate(-45deg);
+  }
+/* --------------------------------------
+   Carousel  中間的圖片切換
+   -------------------------------------- */
+   #myCarousel {
+     margin-top: 60px;
+     font-size: 1rem;
+      margin-bottom: 60px;
+   }
+
+   .carousel-caption {
+     font-size: 1.5em;
+   }
+
+   .carousel-caption h4 {
+     font-size: 2em;
+   }
+
+   #myCarousel .item {height: 400px;}
+
+   #slide1 {
+     background: url('../images/carousel_medium_01.png') top center repeat;
+   }/*--圖片設定 語法 http://www.w3schools.com/cssref/css3_pr_background.asp--*/
+
+   #slide2 {
+     background: url('../images/carousel_medium_02.png') top center repeat;
+   }
+
+   #slide3 {
+     background: url('../images/carousel_medium_03.png') top center repeat;
+   }
+   /* main CONTENT
+   -------------------------------------------------- */
+   #main .col-lg-6 li{
+     list-style: none;
+   }
+   /* --------------------------------------
+      Media Queries rwd 的設定
+      -------------------------------------- */
+
+ @media (min-width: 1200px) {
+
+   #myCarousel .item {height: 500px;}
+
+   #myCarousel {font-size: 1.5rem;}
+
+   #slide1 {
+     background: url('../images/carousel_large_01.png') top center repeat;
+   }
+
+   #slide2 {
+     background: url('../images/carousel_large_02.png') top center repeat;
+   }
+
+   #slide3 {
+     background: url('../images/carousel_large_03.png') top center repeat;
+   }
+ }
+
+@media (max-width: 768px) {
+
+   #myCarousel .item {height: 310px;}
+
+   #myCarousel {font-size: 0.8rem;}
+
+  #slide1 {
+    background: url('../images/carousel_small_01.png') top center repeat;
+  }
+
+  #slide2 {
+    background: url('../images/carousel_small_02.png') top center repeat;
+  }
+
+  #slide3 {
+    background: url('../images/carousel_small_03.png') top center repeat;
+  }
+}
+
+#event img{
+   width: 140px;
+   height: 140px;
+}
+#event-img{
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#info h3{
+  text-align: center;
+}
+#top-tab {
+  margin-top: 100px;
+}
+#top-tab h3{
+  text-align: center;
+}
+#courseimg{
+  margin-bottom: 50px;
+}
+#box1{
+  background-color:	#fcfcfc;
+  width: 500px;
+  height: 350px;
+  margin-left: 50px;
+  border-radius: 5px;
+}
+#box2{
+  background-color: 	#fcfcfc;
+  width: 500px;
+  height: 350px;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+#cform{
+  margin-top: 100px;
+}
+/* --------------------------------------
+   Footer 的設定
+   -------------------------------------- */
+
+footer {
+  background: #333;
+  color: #eee;
+  font-size: 11px;
+  padding: 20px;
+}
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+}
